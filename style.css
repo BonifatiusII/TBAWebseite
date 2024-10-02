@@ -1,0 +1,273 @@
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 55px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h2 {
+  margin-left: 80px;
+  margin-right: 80px;
+  color: black;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: 30px;
+}
+
+.bildlogo {
+  height: 300px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.bildlogo.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: -30px;
+  margin-left: 10px;
+  height: 200px;
+  transition: all 0.5s ease;
+}
+
+.bildlogo.normal {
+  height: 300px;
+  transition: all 0.5s ease;
+}
+
+.leiste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  background-color: gold;
+  box-sizing: border-box;
+}
+
+.second {
+  margin-top: 50px;
+}
+
+.leiste div {
+  padding: 10px 20px;
+}
+
+.leiste div:hover h2 {
+  text-decoration: underline;
+}
+
+.stundenplan {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-right: 37px;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.time {
+  background-color: goldenrod;
+  border-radius: 5px;
+}
+
+.eintrag p {
+  margin: 5px;
+}
+
+.eintrag p.time {
+  margin-bottom: 10px;
+}
+
+.eintrag p + p {
+  margin-top: 2px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.wochentag {
+  border-right: solid 2px #000;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 200px;
+  height: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.samstag {
+  border: none;
+}
+
+.eintrag {
+  text-align: center;
+  border: solid 2px #000;
+  margin: 15px;
+  height: 110px;
+  width: 160px;
+  border-radius: 5%;
+}
+
+.uberuns {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgray;
+}
+
+.gruppe {
+  height: 420px;
+  border: solid;
+  border-width: 5px;
+  border-color: gray;
+}
+
+.uber {
+  margin: 30px;
+}
+
+.text {
+  width: 500px;
+  font-size: 20px;
+}
+
+.insta {
+  background: #C13584;
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 100;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #C13584;
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.insta:hover {
+  background-color: #c13584;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.instabutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.conti {
+  text-align: center;
+}
+
+.contact {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: lightgray;
+  margin-bottom: 100px;
+}
+
+.c {
+  margin: 30px;
+}
+
+.map {
+  border: solid;
+  border-width: 5px;
+  border-color: gray;
+}
+
+.footer-links {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  background-color: #eaeaea;
+}
+
+.footer-links a {
+  margin: 0 15px;
+  font-size: 16px;
+  color: #555;
+}
+
+.footer-links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.dataimp body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.dataimptext {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dataimp h1 {
+  color: #333;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  .eintrag {
+    text-align: center;
+    border: solid 2px #000;
+    margin: 15px;
+    height: 50px;
+    width: 120px;
+  }
+}
