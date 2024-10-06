@@ -79,10 +79,6 @@ button {
   margin-bottom: 50px;
   background-color: gold;
   box-sizing: border-box;
-  border-top: solid;
-  border-bottom: solid;
-  border-width: 2px;
-  border-color: grey;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
 }
@@ -289,6 +285,9 @@ iframe {
   .leiste{
     margin-bottom: 50px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  }
+  .button{
+    font-size: clamp(20px, 3vw, 30px)
   }
   .sichtbar {
     color: black; /* Sichtbarer Text */
