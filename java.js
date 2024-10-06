@@ -63,20 +63,7 @@ $(document).ready(function() {
         $('.eintrag.open.matte').css('visibility', 'visible');
     });
 });
-
-document.addEventListener("scroll", function() {
-    const logo = document.querySelector('.bildlogo');
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition > 100) {
-        logo.classList.add('fixed');
-        logo.classList.remove('normal');
-    } else {
-        logo.classList.add('normal');
-        logo.classList.remove('fixed');
-    }
-});
-
+  
 function redirectToInstagram() {
     window.open("https://www.instagram.com/thaiboxacademy_konstanz/?hl=de", "_blank", "noopener");
 }
