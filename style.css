@@ -417,7 +417,7 @@ iframe {
 
   .button{
     width: 40px;
-    margin-right: px;
+    font-size: clamp(10px,1vw,20vw);
   }
 
   .eintrag {
