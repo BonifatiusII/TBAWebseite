@@ -16,7 +16,9 @@ h1 {
   ); /* Mindestens 16px, skaliert mit der Bildschirmbreite (5vw), aber höchstens 40px */
   margin-left: 20px;
   margin-right: 20px;
-}.sichtbar {
+}
+
+.sichtbar {
   color: black; /* Sichtbarer Text */
 }
 
@@ -53,8 +55,9 @@ button {
 .logo {
   display: flex;
   align-self: center;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  margin-top: -25px;
 }
 
 .bildlogo {
@@ -73,9 +76,15 @@ button {
   align-items: center;
   width: 100%;
   height: 80px;
-  margin: 0;
+  margin-bottom: 50px;
   background-color: gold;
   box-sizing: border-box;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color: grey;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+
 }
 
 .second {
@@ -147,6 +156,7 @@ button {
   display: flex;
   justify-content: space-evenly;
   background-color: lightgray;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .gruppe {
@@ -205,7 +215,8 @@ button {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
-  background-color: lightgray;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
 .c {
@@ -275,6 +286,10 @@ iframe {
 }
 
 @media (max-width: 1050px) {
+  .leiste{
+    margin-bottom: 50px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  }
   .sichtbar {
     color: black; /* Sichtbarer Text */
   }
@@ -396,6 +411,9 @@ iframe {
   .leiste {
     width: 100vw;
     height: 50px;
+    border-width: 1px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 40px rgba(0, 0, 0, 0.2);
   }
 
   .button{
