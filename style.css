@@ -16,6 +16,13 @@ h1 {
   ); /* Mindestens 16px, skaliert mit der Bildschirmbreite (5vw), aber höchstens 40px */
   margin-left: 20px;
   margin-right: 20px;
+}.sichtbar {
+  color: black; /* Sichtbarer Text */
+}
+
+.unsichtbar {
+  color: transparent; /* Unsichtbarer Text */
+  visibility: visible; /* Nimmt trotzdem Platz ein */
 }
 
 h2 {
@@ -46,11 +53,8 @@ button {
 .logo {
   display: flex;
   align-self: center;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: -50px;
-  margin: 20px;
-  margin-left: 70px;
 }
 
 .bildlogo {
@@ -271,6 +275,18 @@ iframe {
 }
 
 @media (max-width: 1050px) {
+  .sichtbar {
+    color: black; /* Sichtbarer Text */
+  }
+
+  .logo {
+    margin-top: -30px;
+  }
+  
+  .unsichtbar {
+    color: transparent; /* Unsichtbarer Text */
+    visibility: visible; /* Nimmt trotzdem Platz ein */
+  }
   .uberuns {
     margin-top: 120px;
     margin-bottom: 50px;
@@ -349,6 +365,14 @@ iframe {
   h1 {
     font-size: 20px;
   }
+  .sichtbar {
+    color: black; /* Sichtbarer Text */
+  }
+  
+  .unsichtbar {
+    color: transparent; /* Unsichtbarer Text */
+    visibility: visible; /* Nimmt trotzdem Platz ein */
+  }
 
   h2 {
     font-size: clamp(20px, 5vw, 40px);
@@ -360,9 +384,9 @@ iframe {
   }
 
   .logo {
-    margin-top: 1px;
+    margin-top: -10px;
     display: flex;
-    margin-left: 39px;
+    justify-content: center;
   }
 
   .bildlogo {
