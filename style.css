@@ -32,10 +32,6 @@ h3 {
 
 /* Button Styling */
 button {
-  margin-top: clamp(0px, 1vw, 10px);
-  margin-bottom: clamp(0px, 1vw, 10px);
-  margin-left: clamp(0px, 3vw, 30px);
-  margin-right: clamp(0px, 3vw, 30px);
   border: none;
   background-color: transparent;
   color: #000;
@@ -380,6 +376,7 @@ iframe {
 
   .button{
     width: 40px;
+    margin-right: px;
   }
 
   .eintrag {
