@@ -5,7 +5,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: linear-gradient(to right, rgba(2, 1, 0, 0.39), rgba(2, 2, 15, 0.473)), url("Fotos/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+
 
 /* Überschriften */
 h1 {
@@ -16,6 +22,7 @@ h1 {
   ); /* Mindestens 16px, skaliert mit der Bildschirmbreite (5vw), aber höchstens 40px */
   margin-left: 20px;
   margin-right: 20px;
+  color: black;
 }
 
 .sichtbar {
@@ -30,7 +37,6 @@ h1 {
 h2 {
   margin-left: 80px;
   margin-right: 80px;
-  color: black;
 }
 
 h3 {
@@ -80,7 +86,6 @@ button {
   background-color: gold;
   box-sizing: border-box;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-
 }
 
 .second {
@@ -108,6 +113,7 @@ button {
 .eintrag p {
   margin: 5px;
   font-size: clamp(12px, 1vw, 30px);
+  color: black;
 }
 
 .eintrag p.time {
@@ -151,7 +157,7 @@ button {
   margin-bottom: 50px;
   display: flex;
   justify-content: space-evenly;
-  background-color: lightgray;
+  background-color: rgb(233, 233, 233);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -281,14 +287,16 @@ iframe {
   height: 450px; /* Reduziere die Höhe auf kleineren Bildschirmen */
 }
 
+
 @media (max-width: 1050px) {
-  .leiste{
+  .leiste {
     margin-bottom: 50px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
   }
-  .button{
-    font-size: clamp(20px, 3vw, 30px)
+  .button {
+    font-size: clamp(20px, 3vw, 30px);
   }
+
   .sichtbar {
     color: black; /* Sichtbarer Text */
   }
@@ -296,11 +304,12 @@ iframe {
   .logo {
     margin-top: -30px;
   }
-  
+
   .unsichtbar {
     color: transparent; /* Unsichtbarer Text */
     visibility: visible; /* Nimmt trotzdem Platz ein */
   }
+
   .uberuns {
     margin-top: 120px;
     margin-bottom: 50px;
@@ -320,7 +329,7 @@ iframe {
     border: solid;
     border-width: 5px;
     border-color: gray;
-    margin:0;
+    margin: 0;
   }
 
   .text {
@@ -355,7 +364,6 @@ iframe {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: lightgray;
-    
   }
 
   .map {
@@ -364,8 +372,8 @@ iframe {
     border-color: gray;
     width: 80%;
     height: clamp(300px, 30vh, 450px);
-  }  
-  
+  }
+
   .daten {
     font-size: clamp(3px, 3vw, 30px);
   }
@@ -376,13 +384,22 @@ iframe {
 }
 
 @media (max-width: 490px) {
+  body{
+    background-image: linear-gradient(to right, rgba(2, 1, 0, 0.39), rgba(2, 2, 15, 0.473)), url("Fotos/background.png");
+    background-size: contain;
+    background-attachment: scroll;
+    background-repeat: inherit;
+
+  }
+
   h1 {
     font-size: 20px;
   }
+  
   .sichtbar {
     color: black; /* Sichtbarer Text */
   }
-  
+
   .unsichtbar {
     color: transparent; /* Unsichtbarer Text */
     visibility: visible; /* Nimmt trotzdem Platz ein */
@@ -392,7 +409,7 @@ iframe {
     font-size: clamp(20px, 5vw, 40px);
     margin-top: -5px;
   }
- 
+
   h3 {
     font-size: 10px;
   }
@@ -415,9 +432,9 @@ iframe {
     box-shadow: 0 3px 40px rgba(0, 0, 0, 0.2);
   }
 
-  .button{
+  .button {
     width: 40px;
-    font-size: clamp(10px,1vw,20vw);
+    font-size: clamp(10px, 1vw, 20vw);
   }
 
   .eintrag {
@@ -426,7 +443,6 @@ iframe {
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  
 
   .uberuns {
     flex-direction: column;
@@ -490,7 +506,6 @@ iframe {
     border-color: gray;
     width: 80%;
     height: 200px;
-
   }
 
   .insta {
