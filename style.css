@@ -269,6 +269,17 @@ a:hover {
 }
 
 @media (max-width: 1050px) {
+  body{
+    background-image: linear-gradient(
+        to right,
+        rgba(7, 7, 7, 0.61),
+        rgba(0, 0, 2, 0.699)
+      ),
+      url("Fotos/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   h2 {
     display: flex;
     align-self: center;
@@ -357,13 +368,13 @@ a:hover {
   body {
     background-image: linear-gradient(
         to right,
-        rgba(2, 1, 0, 0.39),
-        rgba(2, 2, 15, 0.473)
+        rgba(7, 7, 7, 0.61),
+        rgba(0, 0, 2, 0.699)
       ),
       url("Fotos/background.png");
+    background-repeat: repeat;
     background-size: contain;
     background-attachment: fixed;
-    background-repeat: repeat;
   }
 
   h1 {
