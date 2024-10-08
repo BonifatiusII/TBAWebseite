@@ -276,7 +276,7 @@ a:hover {
         rgba(0, 0, 2, 0.699)
       ),
       url("Fotos/background.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: contain;
     background-attachment: fixed;
   }
