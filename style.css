@@ -1,40 +1,30 @@
-/* Allgemeine Layout-Definitionen */
 body {
   background-color: whitesmoke;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(to right, rgba(2, 1, 0, 0.39), rgba(2, 2, 15, 0.473)), url("Fotos/background.png");
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 7, 7, 0.61),
+      rgba(0, 0, 2, 0.699)
+    ),
+    url("Fotos/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-
-
-/* Überschriften */
 h1 {
-  font-size: clamp(
-    16px,
-    8vw,
-    55px
-  ); /* Mindestens 16px, skaliert mit der Bildschirmbreite (5vw), aber höchstens 40px */
+  font-size: clamp(16px, 8vw, 55px);
   margin-left: 20px;
   margin-right: 20px;
   color: black;
 }
 
-.sichtbar {
-  color: black; /* Sichtbarer Text */
-}
-
-.unsichtbar {
-  color: transparent; /* Unsichtbarer Text */
-  visibility: visible; /* Nimmt trotzdem Platz ein */
-}
-
 h2 {
+  display: flex;
+  justify-content: center;
   margin-left: 80px;
   margin-right: 80px;
 }
@@ -45,20 +35,16 @@ h3 {
   margin-bottom: 25px;
 }
 
-/* Button Styling */
-button {
-  border: none;
-  background-color: transparent;
-  color: #000;
-  font-size: clamp(
-    8px,
-    4vw,
-    30px
-  ); /* Mindestens 16px, skaliert mit der Bildschirmbreite (5vw), aber höchstens 40px */
+.sichtbar {
+  color: black;
 }
 
-/* Flexbox und Skalierung für das Logo */
-.logo {
+.unsichtbar {
+  color: transparent;
+  visibility: visible;
+}
+
+.header {
   display: flex;
   align-self: center;
   justify-content: center;
@@ -66,7 +52,7 @@ button {
   margin-top: -25px;
 }
 
-.bildlogo {
+.wappen {
   display: flex;
   align-self: center;
   top: 0;
@@ -75,7 +61,6 @@ button {
   max-height: 300px;
 }
 
-/* Responsive Leiste */
 .leiste {
   display: flex;
   justify-content: space-evenly;
@@ -88,15 +73,17 @@ button {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
-.second {
-  margin-top: 50px;
-}
-
 .leiste div:hover h2 {
   text-decoration: underline;
 }
 
-/* Stundenplan Layout */
+button {
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: clamp(8px, 4vw, 30px);
+}
+
 .stundenplan {
   display: flex;
   justify-content: center;
@@ -104,30 +91,6 @@ button {
   margin-top: 20px;
   font-family: "Bricolage Grotesque", sans-serif;
 }
-
-.time {
-  background-color: goldenrod;
-  border-radius: 5px;
-}
-
-.eintrag p {
-  margin: 5px;
-  font-size: clamp(12px, 1vw, 30px);
-  color: black;
-}
-
-.eintrag p.time {
-  margin-bottom: 10px;
-}
-
-.eintrag p + p {
-  margin-top: 2px;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
 .wochentag {
   border-right: solid 2px #000;
   box-sizing: border-box;
@@ -141,6 +104,10 @@ button {
 .samstag {
   border: none;
 }
+.time {
+  background-color: goldenrod;
+  border-radius: 5px;
+}
 
 .eintrag {
   text-align: center;
@@ -151,8 +118,27 @@ button {
   border-radius: 5%;
 }
 
-/* Über uns Abschnitt */
-.uberuns {
+.eintrag p.time {
+  margin-bottom: 10px;
+  text-shadow: 0px 0px 0px;
+}
+
+.eintrag p {
+  margin: 5px;
+  font-size: clamp(12px, 1vw, 30px);
+  color: black;
+  text-shadow: 0px 2px 7px gainsboro;
+}
+
+.eintrag p + p {
+  margin-top: 2px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.infodiv {
   margin-top: 120px;
   margin-bottom: 50px;
   display: flex;
@@ -161,23 +147,25 @@ button {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.gruppe {
+.infotext {
+  width: 500px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gruppendiv {
+  margin: 30px;
+}
+
+.gruppenbild {
   height: 420px;
   border: solid;
   border-width: 5px;
   border-color: gray;
 }
 
-.uber {
-  margin: 30px;
-}
-
-.text {
-  width: 500px;
-  font-size: 20px;
-}
-
-/* Instagram Button */
 .insta {
   background: #c13584;
   position: relative;
@@ -194,26 +182,19 @@ button {
   overflow: hidden;
   color: #fff;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.719);
 }
-
-.insta:hover {
-  background-color: #c13584;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-}
-
 .instabutton {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-
-/* Kontaktbereich */
-.conti {
-  text-align: center;
+.insta:hover {
+  background-color: #c13584;
+  box-shadow: 0 10px 20px rgba(241, 236, 236, 0.493);
 }
 
-.contact {
+.contactdiv {
   margin-top: 50px;
   display: flex;
   justify-content: space-evenly;
@@ -221,7 +202,7 @@ button {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.c {
+.contact {
   margin: 30px;
 }
 
@@ -230,8 +211,14 @@ button {
   border-width: 5px;
   border-color: gray;
 }
+iframe {
+  width: 600px;
+  height: 450px;
+}
+.ansprechpartner {
+  text-align: center;
+}
 
-/* Footer Bereich */
 .footer-links {
   text-align: center;
   padding: 20px;
@@ -251,7 +238,6 @@ button {
   text-decoration: underline;
 }
 
-/* Datenschutzerklärung Seite */
 .dataimp body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -272,7 +258,6 @@ button {
   color: #333;
 }
 
-/* Links */
 a {
   color: #007bff;
   text-decoration: none;
@@ -282,13 +267,22 @@ a:hover {
   text-decoration: underline;
 }
 
-iframe {
-  width: 600px; /* 100% der Containerbreite für Mobilgeräte */
-  height: 450px; /* Reduziere die Höhe auf kleineren Bildschirmen */
-}
-
-
 @media (max-width: 1050px) {
+  h2 {
+    display: flex;
+    align-self: center;
+    color: black;
+  }
+  .sichtbar {
+    color: black;
+  }
+  .unsichtbar {
+    color: transparent;
+    visibility: visible;
+  }
+  .header {
+    margin-top: -30px;
+  }
   .leiste {
     margin-bottom: 50px;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
@@ -297,20 +291,15 @@ iframe {
     font-size: clamp(20px, 3vw, 30px);
   }
 
-  .sichtbar {
-    color: black; /* Sichtbarer Text */
+  .stundenplan p {
+    font-size: clamp(12px, 1vh, 20px);
   }
 
-  .logo {
-    margin-top: -30px;
+  .nAbsprache {
+    visibility: hidden;
   }
 
-  .unsichtbar {
-    color: transparent; /* Unsichtbarer Text */
-    visibility: visible; /* Nimmt trotzdem Platz ein */
-  }
-
-  .uberuns {
+  .infodiv {
     margin-top: 120px;
     margin-bottom: 50px;
     display: flex;
@@ -319,8 +308,12 @@ iframe {
     background-color: lightgray;
   }
 
-  .uber {
-    width: 90%;
+  .infotext {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    font-size: clamp(12px, 3vw, 40px);
+    width: 80%;
   }
 
   .gruppe {
@@ -331,31 +324,7 @@ iframe {
     border-color: gray;
     margin: 0;
   }
-
-  .text {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    font-size: clamp(12px, 3vw, 40px);
-    width: 80%;
-  }
-
-  h2 {
-    display: flex;
-    align-self: center;
-    color: black;
-  }
-
-  iframe {
-    width: 100%; /* 100% der Containerbreite für Mobilgeräte */
-    height: 100%; /* Reduziere die Höhe auf kleineren Bildschirmen */
-  }
-
-  .nAbsprache {
-    visibility: hidden;
-  }
-
-  .contact {
+  .contactdiv {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,7 +334,6 @@ iframe {
     justify-content: space-evenly;
     background-color: lightgray;
   }
-
   .map {
     border: solid;
     border-width: 5px;
@@ -374,53 +342,57 @@ iframe {
     height: clamp(300px, 30vh, 450px);
   }
 
-  .daten {
-    font-size: clamp(3px, 3vw, 30px);
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 
-  .stundenplan p {
-    font-size: clamp(12px, 1vh, 20px);
+  .daten {
+    font-size: clamp(3px, 3vw, 30px);
   }
 }
 
 @media (max-width: 490px) {
-  body{
-    background-image: linear-gradient(to right, rgba(2, 1, 0, 0.39), rgba(2, 2, 15, 0.473)), url("Fotos/background.png");
+  body {
+    background-image: linear-gradient(
+        to right,
+        rgba(2, 1, 0, 0.39),
+        rgba(2, 2, 15, 0.473)
+      ),
+      url("Fotos/background.png");
     background-size: contain;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-repeat: inherit;
-
   }
 
   h1 {
     font-size: 20px;
   }
-  
-  .sichtbar {
-    color: black; /* Sichtbarer Text */
-  }
-
-  .unsichtbar {
-    color: transparent; /* Unsichtbarer Text */
-    visibility: visible; /* Nimmt trotzdem Platz ein */
-  }
 
   h2 {
     font-size: clamp(20px, 5vw, 40px);
-    margin-top: -5px;
+    margin-top: 30px;
   }
 
   h3 {
     font-size: 10px;
   }
+  .sichtbar {
+    color: black;
+  }
 
-  .logo {
+  .unsichtbar {
+    color: transparent;
+    visibility: visible;
+  }
+
+  .header {
     margin-top: -10px;
     display: flex;
     justify-content: center;
   }
 
-  .bildlogo {
+  .wappen {
     height: 20vw;
   }
 
@@ -436,50 +408,14 @@ iframe {
     width: 40px;
     font-size: clamp(10px, 1vw, 20vw);
   }
-
-  .eintrag {
-    height: 50px;
-    width: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  .uberuns {
-    flex-direction: column;
-    width: 100vw;
-  }
-
-  .text {
-    width: 60vw;
-    font-size: 13px;
-    width: 80%;
-  }
-
-  .gruppe {
-    margin-top: -30px;
-    height: 59%;
-    width: 100%;
-    border-width: 3px;
-    border-color: gray;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: lightgray;
-  }
-
   .stundenplan {
     width: 100%;
     margin-bottom: -80px;
+  }
+  .wochentag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .stundenplan p {
@@ -491,13 +427,37 @@ iframe {
     width: 85%;
   }
 
-  iframe {
-    width: 100%; /* 100% der Containerbreite für Mobilgeräte */
-    height: 100%; /* Reduziere die Höhe auf kleineren Bildschirmen */
+  .eintrag {
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
-  .c {
-    margin: 30px;
+  .infodiv {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .infotext {
+    width: 60vw;
+    font-size: 13px;
+    width: 80%;
+  }
+  .contactdiv {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightgray;
+  }
+  .gruppenbild {
+    margin-top: -30px;
+    height: 59%;
+    width: 100%;
+    border-width: 3px;
+    border-color: gray;
   }
 
   .map {
@@ -508,6 +468,15 @@ iframe {
     height: 200px;
   }
 
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact {
+    margin: 30px;
+  }
+
   .insta {
     font-size: 25px;
   }
@@ -515,11 +484,5 @@ iframe {
   .instabutton {
     margin-top: -20px;
     margin-bottom: -20px;
-  }
-
-  .wochentag {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
