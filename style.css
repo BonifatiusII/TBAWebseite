@@ -272,8 +272,8 @@ a:hover {
   body{
     background-image: linear-gradient(
         to right,
-        rgba(7, 7, 7, 0.61),
-        rgba(0, 0, 2, 0.699)
+        rgba(7, 7, 7, 0.479),
+        rgba(0, 0, 2, 0.479)
       ),
       url("Fotos/background.png");
     background-repeat: repeat;
@@ -368,8 +368,8 @@ a:hover {
   body {
     background-image: linear-gradient(
         to right,
-        rgba(7, 7, 7, 0.61),
-        rgba(0, 0, 2, 0.699)
+        rgba(7, 7, 7, 0.479),
+        rgba(0, 0, 2, 0.479)
       ),
       url("Fotos/background.png");
     background-repeat: repeat;
