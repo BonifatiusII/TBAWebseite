@@ -15,11 +15,12 @@ body {
   background-attachment: fixed;
 }
 
+
+
 h1 {
   font-size: clamp(16px, 8vw, 55px);
   margin-left: 20px;
   margin-right: 20px;
-  color: black;
 }
 
 h2 {
@@ -362,7 +363,7 @@ a:hover {
       url("Fotos/background.png");
     background-size: contain;
     background-attachment: fixed;
-    background-repeat: inherit;
+    background-repeat: repeat;
   }
 
   h1 {
