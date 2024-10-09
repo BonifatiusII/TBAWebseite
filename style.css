@@ -275,8 +275,8 @@ a:hover {
         rgba(7, 7, 7, 0.479),
         rgba(0, 0, 2, 0.479)
       ),
-      url("Fotos/background.png");
-    background-repeat: repeat;
+      url("Fotos/background-tablete.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
