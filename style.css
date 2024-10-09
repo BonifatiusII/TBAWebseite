@@ -277,7 +277,7 @@ a:hover {
       ),
       url("Fotos/background.png");
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
   }
   h2 {
