@@ -117,18 +117,19 @@ button {
   height: 110px;
   width: auto;
   border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.493);
 }
 
 .eintrag p.time {
   margin-bottom: 10px;
   text-shadow: 0px 0px 0px;
+  color: black;
 }
 
 .eintrag p {
   margin: 5px;
   font-size: clamp(12px, 1vw, 30px);
-  color: black;
-  text-shadow: 0px 2px 7px gainsboro;
+  color: white;
 }
 
 .eintrag p + p {
