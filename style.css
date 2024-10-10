@@ -164,6 +164,7 @@ button {
 
 .gruppenbild {
   height: 420px;
+
   border: solid;
   border-width: 5px;
   border-color: gray;
@@ -340,6 +341,10 @@ a:hover {
     border-color: gray;
     margin: 0;
   }
+  .gruppenbild{
+    height: 40vw;
+  }
+
   .contactdiv {
     display: flex;
     flex-direction: column;
