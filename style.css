@@ -160,11 +160,14 @@ button {
 
 .gruppendiv {
   margin: 30px;
+  width: 40%;
+  display: flex;
+  align-self: center;
 }
 
 .gruppenbild {
-  height: 420px;
-
+  height: 100%;
+  width: 100%;
   border: solid;
   border-width: 5px;
   border-color: gray;
@@ -290,6 +293,10 @@ a:hover {
     align-self: center;
     color: black;
   }
+
+  h3 {
+    
+  }
   .sichtbar {
     color: black;
   }
@@ -329,20 +336,20 @@ a:hover {
     display: flex;
     align-self: center;
     flex-direction: column;
-    font-size: clamp(12px, 3vw, 40px);
+    font-size: clamp(12px, 2vw, 50px);
     width: 80%;
   }
 
-  .gruppe {
-    width: 100%;
-    height: 59%;
-    border: solid;
-    border-width: 5px;
-    border-color: gray;
-    margin: 0;
+  .gruppendiv{
+    width: 80%;
   }
-  .gruppenbild{
-    height: 40vw;
+
+  .gruppenbild {
+    margin-top: -30px;
+    height: 59%;
+    width: 100%;
+    border-width: 3px;
+    border-color: gray;
   }
 
   .contactdiv {
