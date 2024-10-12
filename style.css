@@ -396,6 +396,15 @@ a:hover {
   .daten {
     font-size: clamp(3px, 3vw, 25px);
   }
+  .mail{
+    color: blue;
+  }
+  .phone1{
+    color: blue;
+  }
+  .phone2{
+    color: blue;
+  }
 }
 
 @media (max-width: 490px) {
@@ -534,5 +543,15 @@ a:hover {
   .instabutton {
     margin-top: -20px;
     margin-bottom: -20px;
+  }
+
+  .mail{
+    color: blue;
+  }
+  .phone1{
+    color: blue;
+  }
+  .phone2{
+    color: blue;
   }
 }
