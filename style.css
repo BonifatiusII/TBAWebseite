@@ -235,6 +235,15 @@ iframe {
 .ansprechpartner {
   text-align: center;
 }
+.mail{
+  color: blue;
+}
+.phone1{
+  color: blue;
+}
+.phone2{
+  color: blue;
+}
 
 .footer-links {
   text-align: center;
