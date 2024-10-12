@@ -222,8 +222,12 @@ iframe {
   width: 600px;
   height: 450px;
 }
+.daten{
+  font-size: 25px;
+}
 .ansprechpartner {
   text-align: center;
+
 }
 
 .footer-links {
@@ -376,7 +380,7 @@ a:hover {
   }
 
   .daten {
-    font-size: clamp(3px, 3vw, 30px);
+    font-size: clamp(3px, 3vw, 25px);
   }
 }
 
