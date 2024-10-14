@@ -1,3 +1,14 @@
+a[href^="tel"] {
+  color: black; /* Setze hier die gewünschte Farbe */
+  text-decoration: none; /* Entfernt die Unterstreichung */
+}
+
+a[href^="tel"]:hover {
+  color: red; /* Farbe beim Hover, falls gewünscht */
+  text-decoration: underline; /* Optional: Zeigt Unterstreichung beim Hover */
+}
+
+
 body {
   background-color: whitesmoke;
   font-family: Arial, sans-serif;
@@ -149,7 +160,7 @@ button {
     rgb(218, 165, 10),
     rgba(58, 50, 13, 0.63)
   );
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.692);
 }
 
 .infotext {
@@ -212,7 +223,7 @@ button {
     rgb(218, 165, 10),
     rgba(58, 50, 13, 0.733)
   );
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.692);
 }
 
 .contact {
@@ -234,15 +245,6 @@ iframe {
 }
 .ansprechpartner {
   text-align: center;
-}
-.mail{
-  color: blue;
-}
-.phone1{
-  color: blue;
-}
-.phone2{
-  color: blue;
 }
 
 .footer-links {
@@ -396,15 +398,7 @@ a:hover {
   .daten {
     font-size: clamp(3px, 3vw, 25px);
   }
-  .mail{
-    color: blue;
-  }
-  .phone1{
-    color: blue;
-  }
-  .phone2{
-    color: blue;
-  }
+
 }
 
 @media (max-width: 490px) {
@@ -545,13 +539,4 @@ a:hover {
     margin-bottom: -20px;
   }
 
-  .mail{
-    color: blue;
-  }
-  .phone1{
-    color: blue;
-  }
-  .phone2{
-    color: blue;
-  }
 }
