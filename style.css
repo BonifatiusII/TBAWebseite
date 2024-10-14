@@ -1,7 +1,7 @@
 
 body {
   background-color: whitesmoke;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +27,7 @@ h2 {
   justify-content: center;
   margin-left: 80px;
   margin-right: 80px;
+  
 }
 
 h3 {
@@ -81,7 +82,7 @@ button {
   border: none;
   background-color: transparent;
   color: #000;
-  font-size: clamp(8px, 4vw, 30px);
+  font-size: clamp(8px, 4vw, 25px);
 }
 
 .stundenplan {
@@ -89,7 +90,7 @@ button {
   justify-content: center;
   align-self: center;
   margin-top: 20px;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .wochentag {
   border-right: solid 2px #000;
@@ -254,8 +255,7 @@ a[href^="mailto"]:hover, a[href^="tel"]:hover {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  border-top: 1px solid #ccc;
-  background-color: #eaeaea;
+  background-color: rgba(0, 0, 0, 0.733);
 }
 
 .footer-links a {
@@ -265,16 +265,8 @@ a[href^="mailto"]:hover, a[href^="tel"]:hover {
 }
 
 .footer-links a:hover {
-  color: #000;
+  color: goldenrod;
   text-decoration: underline;
-}
-
-.dataimp body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
 }
 
 .dataimptext {
@@ -283,10 +275,6 @@ a[href^="mailto"]:hover, a[href^="tel"]:hover {
   padding: 20px;
   background: whitesmoke;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.dataimp h1 {
-  color: #333;
 }
 
 a {
