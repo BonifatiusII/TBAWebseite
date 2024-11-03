@@ -10,7 +10,7 @@ body {
       rgba(7, 7, 7, 0.61),
       rgba(0, 0, 2, 0.699)
     ),
-    url("Fotos/background.png");
+    url("Fotos/background.webp");
   background-repeat: repeat;
   background-size: 100vw auto;
   background-attachment: fixed;
@@ -293,7 +293,7 @@ a:hover {
         rgba(7, 7, 7, 0.479),
         rgba(0, 0, 2, 0.479)
       ),
-      url("Fotos/background-tablete.png");
+      url("Fotos/background.webp");
     background-repeat: repeat;
     background-size: 100vw auto;
     background-attachment: fixed;
@@ -399,7 +399,7 @@ a:hover {
         rgba(7, 7, 7, 0.479),
         rgba(0, 0, 2, 0.479)
       ),
-      url("Fotos/background.png");
+      url("Fotos/background.webp");
     background-repeat: repeat;
     background-size: contain;
     background-attachment: fixed;

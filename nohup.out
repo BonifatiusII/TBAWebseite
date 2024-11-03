@@ -1,0 +1,10 @@
+[6423:6423:1018/111810.374171:ERROR:object_proxy.cc(576)] Failed to call method: org.freedesktop.ScreenSaver.GetActive: object_path= /org/freedesktop/ScreenSaver: org.freedesktop.DBus.Error.NotSupported: This method is not part of the idle inhibition specification: https://specifications.freedesktop.org/idle-inhibit-spec/latest/
+Created TensorFlow Lite XNNPACK delegate for CPU.
+Attempting to use a delegate that only supports static-sized tensors with a graph that has dynamic-sized tensors (tensor#141 is a dynamic-sized tensor).
+[6423:6450:1018/111813.289137:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[6423:6450:1018/111842.775001:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[6423:6450:1018/111940.581534:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+[6468:6468:1018/112020.481659:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!
+[6468:6468:1018/112020.485627:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 2 times!
+[6468:6468:1018/112020.492930:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 3 times!
+[6423:6450:1018/112130.221736:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
