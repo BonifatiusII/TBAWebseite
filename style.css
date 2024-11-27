@@ -249,7 +249,75 @@ a[href^="mailto"]:hover, a[href^="tel"]:hover {
 }
 
 
+.reviews-section {
+  background: linear-gradient(
+    to right,
+    rgb(218, 165, 10),
+    rgba(58, 50, 13, 0.63)
+  );
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.692);
+  padding: 60px 20px;
+  margin-top: 50px;
+  text-align: center;
+}
 
+.reviews-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 40px;
+  word-wrap: break-word; /* Sicherstellen, dass Wörter umgebrochen werden */
+  text-align: center; /* Zentrierte Überschrift */
+  max-width: 90%; /* Maximale Breite für kleinere Bildschirme */
+  margin: 0 auto 40px; /* Zentrierung durch auto-Margin */
+}
+
+.reviews-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+.review-detail {
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.review-name {
+  font-size: 0.9rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.review-stars {
+  color: #ffc107; /* Goldene Sterne */
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.reviews-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.reviews-controls button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.reviews-controls button:hover {
+  color: #233d2e;
+}
 
 .footer-links {
   text-align: center;
@@ -389,6 +457,26 @@ a:hover {
   .daten {
     font-size: clamp(3px, 3vw, 25px);
   }
+  .reviews-section h2 {
+    font-size: 2rem; /* Kleinere Schriftgröße für mittelgroße Bildschirme */
+    max-width: 95%; /* Noch mehr Platz auf kleinen Bildschirmen */
+}
+
+.reviews-slider {
+    max-width: 90%;
+}
+
+.review-text {
+    font-size: 1.2rem;
+}
+
+.review-detail {
+    font-size: 0.9rem;
+}
+
+.review-stars {
+    font-size: 1.2rem;
+}
 
 }
 
@@ -529,5 +617,23 @@ a:hover {
     margin-top: -20px;
     margin-bottom: -20px;
   }
+  .reviews-section h2 {
+    font-size: 1.8rem; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+}
 
+.review-text {
+    font-size: 1rem;
+}
+
+.review-detail {
+    font-size: 0.8rem;
+}
+
+.review-stars {
+    font-size: 1rem;
+}
+
+.reviews-controls button {
+    font-size: 1.5rem;
+}
 }
