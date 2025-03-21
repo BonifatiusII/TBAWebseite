@@ -132,7 +132,9 @@ button {
   font-size: clamp(12px, 1vw, 30px);
   color: white;
 }
-
+.competition {
+  font-size: clamp(4px, 1vw, 15px) !important;
+}
 .eintrag p + p {
   margin-top: 2px;
 }
